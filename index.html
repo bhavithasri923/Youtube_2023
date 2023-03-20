@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+
+  <style>
+    .parent{
+      display: flex;
+    }
+    .child{
+      display: flex;
+    
+      padding: 5px;
+      padding-right: 0%;
+      margin: 5px;
+      margin-right: 0px;
+      padding-right: 0px;
+      align-items: center;
+    }
+
+    img{
+      padding-right: 290px;
+    }
+
+    #search{
+      flex-grow: 0.8;
+      padding: 0%;
+      margin: 0%;
+    }
+
+    #xxx{
+      border: 1px solid;
+      border-right:  0px solid;
+      border-top-left-radius: 60px;
+      border-bottom-left-radius: 60px;
+      border-color: grey;
+    }
+
+    #yyy{
+
+      border: 1px solid;
+      border-left:  0px solid;
+      border-top-right-radius: 60px;
+      border-bottom-right-radius: 60px;
+      border-color: grey;
+      padding-right: 0px;
+    }
+
+  </style>
+  <body style="background-color:rgb(211, 219, 211) ;">
+
+    <header>
+      <div class="parent">
+
+        <div class="child">
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <img style="display:block;margin-bottom:0%;margin-right:0px;margin-top:2.5px;padding-right:0%; " src="./offcavs.png">
+            </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title" id="offcanvasExampleLabel"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg><u>Profile</u></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p style="font-size:25px;font-weight:bold;background-color: gray;text-align: center;font-family: 'Courier New', Courier, monospace" >Trending</p>
+              <ul style="font-size:20px;">
+              <li>Best Sellers</li>
+              <li>New Releases</li>
+              <li>Movers & Shakers</li>
+              </ul><br>
+              <p style="font-size:25px;font-weight:bold;background-color: gray;text-align: center;font-family: 'Courier New', Courier, monospace;line-height: 2ch;" >Digital content and Devices</p>
+              <ul style="font-size:20px;">
+              <li>Echo and Alexa</li>
+              <li>Fire TV</li>
+              </ul><br>
+              <p style="font-size:25px;font-weight:bold;background-color: gray;text-align: center;font-family: 'Courier New', Courier, monospace" >Programs and Features</p>
+              <ul style="font-size:20px;">
+              <li>Gift Cards</li>
+              <li>Mobile Recharge</li>
+              <li>Flight Tickets</li>
+              <li>Clerance Store</li>
+              </ul><br>
+              <p style="font-size:25px;font-weight:bold;background-color: gray;text-align: center;" >Help and Settings</p>
+              <p style="font-size:20px;text-align: center;font-weight: bold;line-height: 9px;">Your Account</p>
+              <p style="font-size:20px;text-align: center;font-weight: bold;line-height: 9px;">Customer Service</p>
+              <p style="font-size:20px;text-align: center;font-weight: bold;line-height: 9px;">Sign in</p>
+            </div>
+          </div>
+
+          <div class="child">
+            <img src="./Logo.png">
+          </div>
+        </div>
+
+        <div id="search" class="child">
+          <input id="xxx" style="height:fit-content;flex-grow: 3;" type="search" placeholder="   search">
+          <i id="yyy" class="bi bi-search"><svg style="flex-grow:3;" class="mt-1" xmlns="http://www.w3.org/2000/svg" width="40" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 25 25">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></i>
+        </div>
+
+        <div style="padding-right:300px ;" class="child">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+          </svg>
+        </div>
+
+        <div class="child">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+          </svg>
+          <div class="child">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+          </div>
+        </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
